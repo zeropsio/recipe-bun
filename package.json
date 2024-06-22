@@ -1,0 +1,22 @@
+{
+  "name": "zerops-bun",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "bun run src/main.ts",
+    "dev": "bun run --hot src/main.ts",
+    "build": "bun build src/main.ts --outdir ./dist --target bun",
+    "start:prod": "bun run dist/app.js"
+  },
+  "dependencies": {
+    "pg": "^8.5.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4",
+    "@types/bun": "latest",
+    "@types/pg": "^8.11.6",
+    "@types/uuid": "^10.0.0"
+  },
+  "module": "main.ts",
+  "type": "module"
+}
