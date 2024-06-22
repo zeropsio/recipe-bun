@@ -20,3 +20,7 @@ zerops:
         - port: 3000
           httpSupport: true
       start: bun run start:prod
+      healthCheck:
+        httpGet:
+          port: 3000
+          path: /status
