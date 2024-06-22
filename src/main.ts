@@ -2,7 +2,9 @@ import { connectDB } from './db';
 import { v4 as uuidv4 } from 'uuid';
 
 const handler = async (req: Request) => {
-  if (req.method === 'GET' && req.url === '/') {
+  const path = new URL(req.url).pathname;
+
+  if (req.method === 'GET' && path === '/') {
     const client = await connectDB();
     const data = uuidv4();
 
@@ -23,7 +25,7 @@ const handler = async (req: Request) => {
       }),
       { status: 201, headers: { 'Content-Type': 'application/json' } }
     );
-  } else if (req.method === 'GET' && req.url === '/status') {
+  } else if (req.method === 'GET' && path === '/status') {
     return new Response(JSON.stringify({ status: 'UP' }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
