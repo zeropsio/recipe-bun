@@ -11,7 +11,6 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 [![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/green/deploy-button.svg)](https://app.zerops.io/recipe/bun)
 
 <br/>
-<br/>
 
 ## Recipe features
 - Bun app running.js on a load balanced **Zerops Bun** service
@@ -19,6 +18,8 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 - Healthcheck setup example
 - Utilization of Zerops' built-in **environment variables** system
 - Utilization of Zerops' built-in **log management**
+
+<br/>
 
 ## Production vs. development
 Base of the recipe is ready for production, the difference comes down to:
