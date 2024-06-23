@@ -21,7 +21,7 @@ const handler = async (req: Request) => {
       JSON.stringify({
         message: `This is a simple, basic Bun application running on Zerops.io,
           each request adds an entry to the PostgreSQL database and returns a count.
-          See the source repository (https://github.com/zeropsio/recipe-nodejs) for more information.`,
+          See the source repository (https://github.com/zeropsio/recipe-bun) for more information.`,
         newEntry: data,
         count: count
       }),

@@ -13,7 +13,7 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 <br/>
 
 ## Recipe features
-- Bun app running.js on a load balanced **Zerops Bun** service
+- Bun app running on a load balanced **Zerops Bun** service
 - Zerops **PostgreSQL 16** service as database
 - Healthcheck setup example
 - Utilization of Zerops' built-in **environment variables** system
