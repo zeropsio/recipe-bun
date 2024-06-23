@@ -8,3 +8,8 @@ services:
     type: bun@1.1
     buildFromGit: https://github.com/zeropsio/recipe-bun
     enableSubdomainAccess: true
+
+  - hostname: db
+    type: postgresql@16
+    mode: NON_HA
+    priority: 1

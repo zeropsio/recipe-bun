@@ -26,7 +26,7 @@ Base of the recipe is ready for production, the difference comes down to:
 - Use highly available version of the PostgreSQL database (change `mode` from `NON_HA` to `HA` in recipe YAML, `db` service section)
 - Use at least two containers for the Node.js service to achieve high reliability and resilience (add `minContainers: 2` in recipe YAML, `api` service section)
 
-Futher things to think about when running more complex, highly available Node.js production apps on Zerops:
+Futher things to think about when running more complex, highly available Bun production apps on Zerops:
 - containers are volatile - use Zerops object storage to store your files
 - use Zerops Redis (KeyDB) for caching, storing sessions and pub/sub messaging
 - use more advanced logging lib, such as [winston](https://github.com/winstonjs/winston)
