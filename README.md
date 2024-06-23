@@ -1,7 +1,7 @@
 # Zerops x Bun
 This is the most bare-bones example of Bun app running on [Zerops](https://zerops.io) — as few libraries as possible, just a single connnect, read and write to a Postgres database.
 
-![bun](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/cover-nodejs.png)
+![bun](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/cover-bun.png)
 
 <br />
 
