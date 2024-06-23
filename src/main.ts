@@ -15,6 +15,8 @@ const handler = async (req: Request) => {
 
     await client.end();
 
+    console.info('Entry succesfully added: ', data);
+
     return new Response(
       JSON.stringify({
         message: `This is a simple, basic Bun application running on Zerops.io,
@@ -25,6 +27,7 @@ const handler = async (req: Request) => {
       }),
       { status: 201, headers: { 'Content-Type': 'application/json' } }
     );
+
   } else if (req.method === 'GET' && path === '/status') {
     return new Response(JSON.stringify({ status: 'UP' }), {
       status: 200,
